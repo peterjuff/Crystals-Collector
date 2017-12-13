@@ -12,9 +12,9 @@ var losses = 0;
 //comp will randomly generate a number between 19-120
 function getRandomNumb() {
     return Math.floor((Math.random() * 120) + 19);
-   console.log(getRandomNumb); 
+   console.log(getRandomNumb);
 }
-
+ 
 $("#randNumb") === getRandomNumb;
 
 //assign random value to each crystal that changes with each round
