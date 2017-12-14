@@ -1,10 +1,12 @@
+$(document).ready() 
+
 //assign variables for, hidden-random number, crystals, wins, losses, your total score,
 var randNumb;
 var green;
 var yellow;
 var red;
 var blue;
-var totalScore;
+var totalScore = [""];
 var wins = 0;
 var losses = 0;
 
@@ -18,10 +20,15 @@ $("#randNumb").html(randNumb);
 
 //assign random value to each crystal that changes with each round
 
-var green = Math.floor(Math.random() * 12) + 1;
-   newDiv = $("<div>"); 
-   newDiv.text(green);
-   $("#green").append(newDiv);
+
+    var green = Math.floor(Math.random() * 12) + 1;
+   var newDiv = $("<div id='green'>"); 
+   $("#green").on("click");
+       newDiv.text(green);
+   $("totalScore").append(green);
+
+
+
 
     console.log(green);
 
@@ -30,6 +37,7 @@ var yellow = Math.floor(Math.random() * 12) + 1;
     $("#yellow").append(yellow);
     $("#yellow").on("click", function(){
         var yellowValue = ($(this).append("yellow"));
+        alert(yellow);
 })
 
     console.log(yellow);
@@ -38,7 +46,8 @@ var red = Math.floor(Math.random() * 12) + 1;
     $("#red").html(red);
     $("#red").append(red);
     $("#red").on("click", function(){
-        var redValue = ($(this).append("red"));
+    var redValue = ($(this).append("red"));
+        alert(red);
 })
 
     console.log(red);
@@ -48,6 +57,7 @@ var blue = Math.floor(Math.random() * 12) + 1;
     $("#blue").append(blue);
     $("#blue").on("click", function(){
         var blueValue = ($(this).append("blue"));
+        alert(blue);
 })
 
     console.log(blue);

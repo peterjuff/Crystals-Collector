@@ -1,5 +1,6 @@
 body {
     font-size: 20px;
+    color: rgba(8, 6, 92, 0.733);
 
     
 }
@@ -13,4 +14,8 @@ body {
 #randNumb {
 
     font-size: 30px;
+    border-style: solid;
+    padding-left: 110px;
+    
+
 }
