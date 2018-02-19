@@ -36,7 +36,7 @@ var yellow = Math.floor(Math.random() * 12) + 1;
     $("#yellow").html(yellow);
     $("#yellow").append(yellow);
     $("#yellow").on("click", function(){
-        var yellowValue = ($(this).append("yellow"));
+        var yellowValue = $(this).append("yellow");
         alert(yellow);
 })
 
