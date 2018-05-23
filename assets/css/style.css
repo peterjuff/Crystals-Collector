@@ -21,9 +21,14 @@ body {
 
 }
 
-#green, #red, #yellow, #blue {
+#red, #yellow, #blue {
     height: 200px;
     width: 200px;
+}
+
+#green {
+    height: 185px;
+    width: 185px;
 }
 
 #words, #totalScore {
