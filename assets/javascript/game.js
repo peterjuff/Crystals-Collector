@@ -10,6 +10,9 @@ var totalScore = [""];
 var wins = 0;
 var losses = 0;    
 
+//comp will randomly generate a number between 19-120
+var randNumb = Math.floor((Math.random() * 120) + 19);
+console.log(randNumb);
 
 });
 
