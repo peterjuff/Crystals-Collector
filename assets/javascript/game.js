@@ -1,18 +1,46 @@
 $(function() {
 
 //assign variables for, hidden-random number, crystals, wins, losses, your total score,
+var crystals = {
+    green:
+    {
+        name: "green",
+        value: 0
+    },
+    yellow:
+    {
+        name: "yellow",
+        value: 0
+    },
+    red:
+    {
+        name: "red",
+        value: 0
+    },
+    blue:
+    {
+        name: "blue",
+        value: 0
+    }
+};
 var randNumb;
-var green;
-var yellow;
-var red;
-var blue;
 var totalScore = [""];
 var wins = 0;
 var losses = 0;    
 
-//comp will randomly generate a number between 19-120
-var randNumb = Math.floor((Math.random() * 120) + 19);
-console.log(randNumb);
+//function that will get all random numbers at start of each game
+function start() {
+    //comp will randomly generate a number between 19-120
+    var randNumb = Math.floor((Math.random() * 120) + 19);
+    $("#randNumb").html(randNumb);
+    crystals.green.value = Math.floor((Math.random() * 12) + 1);
+    crystals.yellow.value = Math.floor((Math.random() * 12) + 1);
+    crystals.red.value = Math.floor((Math.random() * 12) + 1);
+    crystals.blue.value = Math.floor((Math.random() * 12) + 1);
+}
+
+start();
+
 
 });
 
