@@ -33,13 +33,25 @@ function start() {
     //comp will randomly generate a number between 19-120
     var randNumb = Math.floor((Math.random() * 120) + 19);
     $("#randNumb").html(randNumb);
+
+    //random numbers assigned to each crystal
     crystals.green.value = Math.floor((Math.random() * 12) + 1);
     crystals.yellow.value = Math.floor((Math.random() * 12) + 1);
     crystals.red.value = Math.floor((Math.random() * 12) + 1);
     crystals.blue.value = Math.floor((Math.random() * 12) + 1);
-}
 
+    $("#totalScore").html(totalScore);
+};
+
+//starts game
 start();
+
+$("#green").click(function() {
+    $("#green").text(crystals.green.value);
+    console.log(crystals.green.value);
+
+});
+
 
 
 });
