@@ -40,7 +40,7 @@ function start() {
     crystals.red.value = Math.floor((Math.random() * 12) + 1);
     crystals.blue.value = Math.floor((Math.random() * 12) + 1);
 
-    $("#totalScore").html(totalScore);
+    $("#totalScore").text("Your total score is: " + totalScore);
 };
 
 //starts game
