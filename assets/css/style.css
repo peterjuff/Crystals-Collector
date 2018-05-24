@@ -12,7 +12,7 @@ body {
 
 }
 
-#randNumb {
+#randNumb, #totalScore {
 
     font-size: 30px;
     border-style: solid;
