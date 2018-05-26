@@ -32,7 +32,7 @@ var losses = 0;
 function start() {
     //comp will randomly generate a number between 19-120
     var randNumb = Math.floor((Math.random() * 120) + 19);
-    $("#randNumb").html(randNumb);
+    $("#randNumb").html("Random number: " + randNumb);
 
     //random numbers assigned to each crystal
     crystals.green.value = Math.floor((Math.random() * 12) + 1);
@@ -46,11 +46,7 @@ function start() {
 //starts game
 start();
 
-$("#green").click(function() {
-    $("#green").text(crystals.green.value);
-    console.log(crystals.green.value);
 
-});
 
 
 

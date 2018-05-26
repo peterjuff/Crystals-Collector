@@ -2,35 +2,16 @@ body {
     font-size: 20px;
     color: rgba(8, 6, 92, 0.733);
 
-    
 }
 
-#title {
-    font-size: 30px;
-    font-style: bold;
-    font-family: 'Yatra One', cursive;
 
+#red, #yellow, #blue, #green {
+    height: 125px;
+    width: 125px;
+    margin-left: 50px;
 }
 
-#randNumb, #totalScore {
 
-    font-size: 30px;
-    border-style: solid;
-    padding-left: 110px;
-    
-
-}
-
-#red, #yellow, #blue {
-    height: 200px;
-    width: 200px;
-}
-
-#green {
-    height: 185px;
-    width: 185px;
-}
-
-#words, #totalScore {
+#inst, #totalScore, .jumbotron, h3, p {
     font-family: 'Yatra One', cursive;
 }

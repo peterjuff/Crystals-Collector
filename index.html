@@ -11,7 +11,103 @@
     <title>Crystals Collector!</title>
 </head>
 <body>
+
+    <div class="jumbotron">
+        <h1 class="text-center">Crystals Collector</h1>
+    </div>
+    
     <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="panel panel-primary">
+                    <div class="panel-heading">
+                        <h3 class="panel-title text-center">
+                            Instructions
+                        </h3>
+                    </div>    
+                    <div class="panel-body">
+                        <p>
+                            You will be given a random number at the start of the game. There are four crystals 
+                            below. By clicking on a crystal you will add a specific amount of points to your total score.
+                            You win the game by matching your total score to the random number. The value of each crystal is
+                            hidden from you until you click on it. Each time the game starts the values of each crystal
+                            will change. 
+
+                        </p>
+                    </div>    
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-3">
+                <div class="panel panel-primary">
+                    <div class="panel-heading">
+                        <h3 class="panel-title text-center">Goal Score</h3>
+                    </div>
+                    <div class="panel-body">
+                        <h3 class="text-center" id="randNumb"></h3>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="panel panel-primary">
+                    <div class="panel-heading">
+                        <h3 class="panel-title text-center">Your Score</h3>
+                    </div>
+                    <div class="panel-body">
+                        <h3 class="text-center" id="totalScore"></h3>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="panel panel-primary">
+                    <div class="panel-heading">
+                        <h3 class="panel-title text-center">Games Won</h3>
+                     </div>
+                     <div class="panel-body"> 
+                        <h3 class="text-center" id="wins">0</h3>
+                     </div>
+                </div>     
+            </div>
+            <div class="col-md-3">
+                <div class="panel panel-primary">
+                    <div class="panel-heading">
+                        <h3 class="panel-title text-center">Games Lost</h3>
+                    </div>
+                    <div class="panel-body">
+                        <h3 class="text-center" id="losses">0</h3>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="row">
+            <div class="col-md-12">
+                <div class="panel panel-primary">
+                    <div class="panel-heading">
+                        <h3 class="panel-title text-center">
+                            Crystals
+                        </h3>
+                    </div>
+                    <div class="panel-body">
+                        <div class="col-md-3">
+                            <img id="green" src="assets/images/green.jpg" alt="emerald"></div>
+                        <div class="col-md-3">
+                             <img id="yellow" src="assets/images/yellow.jpg" alt="yellow crystal"></div>
+                        <div class="col-md-3">
+                            <img id="red" src="assets/images/red.jpg" alt="ruby"></div>
+                        <div class="col-md-3">
+                            <img id="blue" src="assets/images/blue.jpg" alt="blue crystal"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+    <!-- <div class="container">
         <div class="row">
             <div class="col-md-3">
                 <img id="green" src="assets/images/green.jpg" alt="emerald"></div>
@@ -32,20 +128,21 @@
         </div>
 
         <div class="row">
-            <div class="col-md-6" id="words">
-                You will be given a random number at the start of the game. <br> There are four crystals 
-                above. By clicking on a crystal you will add a specific amount of points to your total score. <br> 
-                You win the game by matching your total score to the random number. <br> The value of each crystal is
-                hidden from you until you click on it. <br> Each time the game starts the values of each crystal
+            <div class="col-md-12" id="inst">
+                You will be given a random number at the start of the game. There are four crystals 
+                above. By clicking on a crystal you will add a specific amount of points to your total score.
+                You win the game by matching your total score to the random number. The value of each crystal is
+                hidden from you until you click on it. Each time the game starts the values of each crystal
                 will change. 
             </div>
-             <div class="col-md-6" id="totalScore"></div>
         </div>
 
         <div class="row">
-            <div class="col-md-3" id="randNumb"></div>
-            <div class="col-md-6"></div>
-            <!-- <div class="col-md-3" id="totalScore"></div> -->
+            <div class="col-md-3">
+                <div class="panel panel-default" id="randNumb"></div>
+            </div>
+            <div class="col-md-3"></div>
+            <div class="col-md-3" id="totalScore"></div>
         </div>
 
         <div class="row">
@@ -54,7 +151,7 @@
             <div class="col-md-4" id="losses"></div>
         </div>
 
-    </div>
+    </div> -->
 
 <script type="text/javascript" src="assets/javascript/game.js"></script>
 </body>
