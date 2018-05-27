@@ -1,4 +1,4 @@
-# week-4-game
+# Crystals-Collector
 
 Harness the power of the crystals to match the goal score!
 
