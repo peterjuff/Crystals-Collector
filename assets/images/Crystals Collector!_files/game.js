@@ -23,7 +23,7 @@ var crystals = {
         value: 0
     }
 };
-// const randNumb = 0;
+var randNumb;
 var totalScore = 0;
 var wins = 0;
 var losses = 0;    
@@ -34,17 +34,16 @@ function start() {
     totalScore = 0;
     
     //comp will randomly generate a number between 19-120
-    const randNumb = Math.floor((Math.random() * 120) + 19);
-    $("#randNumb").text(randNumb);
-console.log(randNumb)
-console.log(totalScore)
+    var randNumb = Math.floor((Math.random() * 120) + 19);
+    $("#randNumb").html(randNumb);
+
     //random numbers assigned to each crystal
     green = Math.floor((Math.random() * 12) + 1);
     yellow = Math.floor((Math.random() * 12) + 1);
     red = Math.floor((Math.random() * 12) + 1);
     blue= Math.floor((Math.random() * 12) + 1);
 
-
+    console.log(randNumb);
 
 };
 
@@ -52,22 +51,7 @@ console.log(totalScore)
 function click(crystal) {
     totalScore += crystal;
     $("#totalScore").text(totalScore);
-    console.log(totalScore)
-    console.log(randNumb)
-    if (randNumb === totalScore) {
-        alert("You won! Great job!");
-        wins++;
-        $("#wins").text(wins);
-        start();
-  
-    }
-
-    else if (randNumb < totalScore) {
-        alert("You lose. Try again!");
-        loses++
-        $("#losses").text(losses);
-        start();
-    }
+    winLoss();
 };
 
 //starts game
@@ -88,6 +72,24 @@ $("#red").click(function() {
 $("#blue").click(function() {
     click(blue);
 });
+
+function winLoss() {
+
+    if (totalScore === randNumb) {
+        alert("You won! Great job!");
+        wins++;
+        $("#wins").text(wins);
+        start();
+    }
+
+    else if (totalScore > randNumb) {
+        alert("You lose. Try again!");
+        loses++
+        $("#losses").text(losses);
+        start();
+    }
+
+}
 
 
 });
