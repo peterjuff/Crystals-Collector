@@ -2,8 +2,7 @@
 
 Harness the power of the crystals to match the goal score!
 
-[Crystalls-Collector]
-(https://peterjuff.github.io/Crystals-Collector/)
+[Crystalls-Collector](https://peterjuff.github.io/Crystals-Collector/)
 
 ## Instructions
 
